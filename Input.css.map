@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC,EAAE,CAAC;EAChB,OAAO,EAAE,MAAM;CAAG;;AACtB,AAAA,0BAA0B,CAAC;EACvB,oBAAoB,EAAE,IAAI;EAC1B,qBAAqB,EAAE,KAAK;CAAG",
+    "sources": [
+        "Input.sass"
+    ],
+    "names": [],
+    "file": "Input.css"
+}

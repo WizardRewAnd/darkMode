@@ -1,4 +1,36 @@
+body
+    text-decoration-style: bold
+    font-weight: 400
+    font-family: sans-serif
+
 .header-nav-list li
     display: inline
 .header-nav-list-container
     text-decoration-line: none
+    text-decoration-color: black
+.header-nav-list
+    display: flex
+    justify-content: space-between
+.container
+    max-width: 500px
+    margin: 0 auto
+
+.box-switch
+    --bg: #fff
+    --text: #000
+    color: var(--text)
+    width: 100px
+    height: 40px
+    background: var(--light)
+    border-radius: 30px
+    position: relative
+    .switch
+        background: #fff
+        width: 30px
+        height: 30px
+        background: var(--bg)
+        border-radius: 100%
+        position: absolute
+        top: 5px
+        left: 5px
+        transition: 0.5s all ease

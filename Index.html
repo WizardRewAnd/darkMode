@@ -12,20 +12,23 @@
   </head>
   <body>
     <div class="container">
-      <div class="box-switcher">
-        <div class="switch">
-          <div class="header-nav">
-            <ul class="header-nav-list">
-              <li><a class="header-nav-list-container" href="">twitter</a></li>
-              <li><a class="header-nav-list-container" href="">facebook</a></li>
-              <li><a class="header-nav-list-container" href="">snapchat</a></li>
-              <li>
-                <a class="header-nav-list-container" href="">instagram</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div class="box-switch">
+        <div class="switch"></div>
       </div>
+      <div class="header-nav">
+        <ul class="header-nav-list">
+          <li><a class="header-nav-list-container" href="">twitter</a></li>
+          <li><a class="header-nav-list-container" href="">facebook</a></li>
+          <li><a class="header-nav-list-container" href="">snapchat</a></li>
+          <li><a class="header-nav-list-container" href="">instagram</a></li>
+        </ul>
     </div>
+
+    <script>
+      "use strict";
+      $(".box-switch").on("click", () => {
+        $("body").toggleClass("light");
+      });
+    </script>
   </body>
 </html>
