@@ -11,6 +11,7 @@ body {
 .header-nav-list-container {
   text-decoration-line: none;
   text-decoration-color: black;
+  text-transform: uppercase;
 }
 
 .header-nav-list {
