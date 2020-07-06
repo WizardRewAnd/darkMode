@@ -28,15 +28,15 @@ body {
   background: var(--light);
   border-radius: 30px;
   position: relative;
-}
-.switch {
-  background: #fff;
-  width: 30px;
-  height: 30px;
-  background: var(--bg);
-  border-radius: 100%;
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  transition: 0.5s all ease;
+  .switch {
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    background: var(--bg);
+    border-radius: 100%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: 0.5s all ease;
+  }
 }
