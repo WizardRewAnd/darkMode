@@ -22,18 +22,34 @@ body {
   display: inline;
   margin-right: 10px;
 }
-.header-nav-list-container {
-  text-decoration-line: none;
-  text-decoration-color: black;
-  text-transform: uppercase;
-}
 .header-nav-list {
   display: flex;
   justify-content: space-around;
+  color: white;
+  & > li {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  & > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text);
+    font-size: 20px;
+    transition: 0.3s color ease;
+    &:hover {
+      color: var(--light);
+    }
+  }
 }
 .container {
-  max-width: 1000px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.switch-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 150px 0;
 }
 .box-switch {
   --bg: #fff;
@@ -44,6 +60,7 @@ body {
   background: var(--light);
   border-radius: 30px;
   position: relative;
+
   .switch {
     background: #fff;
     width: 30px;
