@@ -1,10 +1,26 @@
+:root {
+  --bg: #222;
+  --text: #fff;
+  --light: #cc9dff;
+}
+body,
+html {
+  height: 100vh;
+}
 body {
+  font-family: "Exo 2", sans-serif;
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  transition: 0.5s background ease;
   text-decoration-style: bold;
   font-weight: 400;
   font-family: sans-serif;
 }
 .header-nav-list li {
   display: inline;
+  margin-right: 10px;
 }
 .header-nav-list-container {
   text-decoration-line: none;
@@ -13,10 +29,10 @@ body {
 }
 .header-nav-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .container {
-  max-width: 500px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .box-switch {
@@ -38,5 +54,22 @@ body {
     top: 5px;
     left: 5px;
     transition: 0.5s all ease;
+  }
+}
+.light {
+  --bg: #cc9dff;
+  --text: #222;
+  background: var(--bg);
+  .box-switch {
+    background: var(--text);
+    .switch {
+      transform: translateX(60px);
+    }
+  }
+  .navigation > li > a {
+    color: var(--text);
+    &:hover {
+      color: #220244;
+    }
   }
 }
